@@ -91,3 +91,12 @@ li span {
 li span:hover {
   color: #e11d48;
 }
+
+.share-btn {
+  margin-top: 1.25rem;
+  background: #6b7280;
+}
+
+.share-btn:hover {
+  background: #4b5563;
+}
