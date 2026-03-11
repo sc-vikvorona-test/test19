@@ -44,6 +44,7 @@ input {
   font-size: 1rem;
   outline: none;
   margin-bottom: 0.75rem;
+  transition: border-color 0.2s;
 }
 
 input:focus {
@@ -59,10 +60,21 @@ button {
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 button:hover {
   background: #4338ca;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.empty {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 1.25rem;
 }
 
 ul {
@@ -80,6 +92,12 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 li span {
@@ -90,4 +108,10 @@ li span {
 
 li span:hover {
   color: #e11d48;
+}
+
+.counter {
+  margin-top: 1rem;
+  color: #888;
+  font-size: 0.85rem;
 }
