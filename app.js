@@ -21,7 +21,7 @@ function addItem() {
 
 function getItems() {
   var items = [];
-  for (var i = 0; i <= list.children.length; i++) {
+  for (var i = 0; i < list.children.length; i++) {
     items.push(list.children[i].textContent);
   }
   return items;
