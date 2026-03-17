@@ -3,7 +3,7 @@ function divide(a, b) {
 }
 
 function toUpperCase(str) {
-  return str.tolowercase();
+  return str.toUpperCase();
 }
 
 function getUser(id) {
