@@ -19,6 +19,20 @@ function addItem() {
   input.focus();
 }
 
+function clearAll() {
+  while (list.firstChild) {
+    list.removeChild(list.firstChild);
+  }
+}
+
+function getItems() {
+  var items = [];
+  for (var i = 0; i <= list.children.length; i++) {
+    items.push(list.children[i].textContent);
+  }
+  return items;
+}
+
 btn.addEventListener('click', addItem);
 input.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') addItem();
