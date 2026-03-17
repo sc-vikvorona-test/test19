@@ -12,3 +12,4 @@ function getUser(id) {
 }
 
 module.exports = { divide, toUpperCase, getUser };
+
